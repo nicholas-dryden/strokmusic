@@ -1,0 +1,225 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+nav {
+  border-bottom: 0.4px solid rgba(255, 255, 255, .5);
+  font-size: 15px;
+}
+
+nav a {
+  color: white;
+  letter-spacing: 1px;
+  margin: 0px 3px;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255, 255, 255);
+  border-radius: 0px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 2.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+button.navbar-toggler:focus {
+  outline: 1px none;
+}
+
+/* stroke */
+
+.stroke li a, .stroke li a:after, .stroke li a:before {
+  transition: all .5s;
+}
+
+.stroke li a:hover {
+  color: white;
+}
+
+.stroke li a {
+  position: relative;
+}
+
+.stroke li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: white;
+  height: 1px;
+}
+
+.stroke li a:hover:after {
+  width: 100%;
+}
+
+.stroke .current-page a:hover:after {
+  width: 0%;
+}
+
+.current-page a {
+  font-weight: bold;
+  border-bottom: 1px solid white;
+  padding-bottom: 7px;
+}
+
+p {
+  font-size: 16px;
+}
+
+h1 {
+  letter-spacing: 1px;
+}
+
+i {
+  font-size: 25px;
+}
+
+.bg-dark {
+  background-color: transparent;
+}
+
+.fa-facebook-square {
+  -webkit-text-fill-color: #3b5998;
+}
+
+.fa-facebook-f {
+  color: #0056b3;
+}
+
+.fa-facebook-f:hover {
+  color: white;
+}
+
+.fa-instagram {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+nav .fa-instagram:hover {
+  color: white;
+}
+
+.logo {
+  color: white;
+}
+
+.invisible {
+  color: transparent;
+}
+
+i {
+  padding: 13px 5px 5px 0px;
+}
+
+.padding-0 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+footer {
+  background-color: #f2f2f2;
+}
+
+footer a {
+  color: #343a40;
+}
+
+.custom {
+  margin-left: 0px!important;
+}
+
+.info {
+  background-color: #f2f2f2;
+}
+
+.promotion {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.promotion img {
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.hire-gear li {
+  margin: 5px;
+}
+
+.banner-area {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/banner_image.jpg) no-repeat center center/cover;
+  color: white;
+}
+
+.relative {
+  position: relative;
+}
+
+.gallery img {
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 375px) {
+  .landing-mobile {
+    margin-bottom: 250px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .extrawidth.w-75 {
+    width: 100%!important;
+  }
+}
+
+@media (min-width:992px) and (max-width:1100px) {
+  .extrawidth2.w-75 {
+    width: 100%!important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+  h1:after, h1:before {
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: white;
+    margin: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .stroke li a:hover:after {
+    width: 10%;
+  }
+  .current-page a {
+    border-bottom: 0px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (width:1024px) {
+  .ipad-pro {
+    position: fixed;
+    height: 600px;
+    bottom: 0;
+    width: 100%;
+  }
+  #ipad-pro2 {
+    margin-top: 40px;
+  }
+}
